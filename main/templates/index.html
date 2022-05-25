@@ -1,0 +1,20 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>main app의 index.html</title>
+</head>
+<body>
+    <h1>Hello main app's index.html</h1>
+
+    <!-- static image -->
+    <img src="{% static 'hoyoung-choi-4XoCxdMnWFg-unsplash.jpg' %}" alt="">
+    <form action="/" method="post">
+        {% csrf_token %}
+        <input type="text" name="id"> <br>
+        <input type="password" name="pw"> <br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
