@@ -1,0 +1,32 @@
+[
+{
+    "model": "main.board",
+    "pk": 1,
+    "fields": {
+        "title": "테스트 제목",
+        "like_count": 1,
+        "view_count": 3,
+        "contents": "테스트용 입니다."
+    }
+},
+{
+    "model": "main.board",
+    "pk": 2,
+    "fields": {
+        "title": "테스트용 2",
+        "like_count": 99,
+        "view_count": 22,
+        "contents": "테스트용 22222222"
+    }
+},
+{
+    "model": "main.board",
+    "pk": 3,
+    "fields": {
+        "title": "테스트용3",
+        "like_count": 99,
+        "view_count": 22,
+        "contents": "테스트3"
+    }
+}
+]

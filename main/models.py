@@ -8,4 +8,4 @@ class Board(models.Model):
     contents = models.TextField()
 
     def __str__(self):
-        return self.title
+        return f'제목:{self.title}, 좋아요 수:{self.like_count}, 조회수:{self.view_count}'
