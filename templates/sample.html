@@ -1,0 +1,39 @@
+{% comment %}
+      < template practice >
+{% endcomment %}
+
+<h1>{{ value }}</h1>
+{# value의 3번째 값 (인덱스와 유사)#}
+<p>{{ value.2 }}</p>
+
+<h2>{{ value2.mickey }}</h2>
+
+<h2>{{ board }}</h2>
+
+{# template tag #}
+{% for i in board %}
+    {#  for문의 카운트 넘버를 의미  #}
+    <h1>{{ forloop.counter }} - {{ i.title }}</h1>
+    <h3>{{ i.contents }}</h3>
+    <p>{{ i.view_count }}</p>
+
+    {% if i.view_count > 98 %}
+        <p>view 수가 너무 많습니다.</p>
+    {% elif i.view_count > 1 %}
+        <p>컨텐츠가 반응을 보이고 있습니다.</p>
+    {% else %}
+        <p>컨텐츠 홍보를 더 해주세요</p>
+    {% endif %}
+{% endfor %}
+
+{% with value='hello world' %}
+    <h1>{{ value }}</h1>
+{% endwith %}
+
+{# 여러줄 주석 #}
+{% comment %}
+sdfkjsldfkjsldkfjsdklfjslkfjsdlkf
+sdflksjdflksjdflskdjfslkdfj
+{% endcomment %}
+
+<h1>Test</h1>

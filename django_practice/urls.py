@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 # from A import B : A에 존재하는 B를 가져오겠다는 의미.
-from main.views import index, test
+from main.views import index, test, sample, sample2
 from a.views import indexA
 from b.views import indexB
 from c.views import indexC
@@ -28,5 +28,8 @@ urlpatterns = [
     path('test/', test),
     path('aa/', indexA),
     path('bb/', indexB),
-    path('cc/', indexC)
+    path('cc/', indexC),
+    path('sample/',sample),
+    path('sample2/', sample2)
+
 ]
